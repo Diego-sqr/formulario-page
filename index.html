@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Formulário</title>
+
+</head>
+<body>
+
+  <div class="container"> 
+    <div class="banner"></div>
+
+    <div class="form">
+
+      <div class="form2">
+        
+        <form method="get">
+          <div class="personal_data">
+            <legend>Informações Pessoais</legend>
+           
+            <div class="name_form">
+              <div class="first_name">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required>
+              </div>
+
+              <div class="lastname">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="last_name" id="lastname" required>
+              </div>  
+
+            </div>  
+            
+            <label>
+              E-mail 
+              <input type="email" name="email" id="email">
+            </label>
+
+            <div class="form_contact">
+
+              <div class="contact_title">
+               <label> Telefone </label>
+              </div>
+              
+               <div class="ddd">
+                 <label>
+                   DDD
+                   <input type="text" id="ddd" name="ddd" maxlength="2" pattern="\d{2}" required>
+                 </label>
+               </div>
+
+               <div class="telephone">
+                  <label>
+                    Tel
+                    <input type="tel" id="tel" name="telefone" required>
+                  </label>
+               </div>
+
+            </div>
+
+              <div class="sexo">
+                <label>
+                  Gênero
+                </label>
+                <div class="sexo_identidade">
+                  <div class="sexo_mens">
+                    <input type="radio" name="sexo" id="men">
+                    <label for="men">Masculino</label>
+                  </div>
+
+                  <div class="sexo_womens">  
+                    <input type="radio" name="sexo" id="women">
+                    <label for="women">Feminino</label>
+                  </div>  
+
+                </div>
+              </div>
+
+            <label> 
+              Data de nascimento <br/>
+              <input type="date" name="date">
+            </label> 
+          
+            <label for="ordenacao"> 
+              Seleciona sua profissão na área de TI 
+            
+              <select name="profissao" id="ordenacao" >
+
+                <option selected></option>
+                <option value="Front">Front-end</option>
+                <option value="Back">Back-end</option>
+                <option value="Engineer">Engenharia de Software</option>
+                <option value="UI">User Experience</option>
+
+              </select>
+            </label>
+
+            <div class="terms_license">
+                <input type="checkbox" name="terms_use" id="terms">
+                <label for="terms">Eu declaro que li e aceitos os termos de uso.</label>
+            </div>
+
+          </fieldset>
+   
+          <input type="submit" value="Enviar">
+
+        </form>
+
+      </div>
+      
+    </div>
+  </div>
+  
+</body>
+</html>
